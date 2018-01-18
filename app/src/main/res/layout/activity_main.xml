@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gradient">
+
+        <LinearLayout
+            android:textColor="@color/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="geoquiz"
+                    android:textColor="@color/text"
+                    android:textAllCaps="true"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingBottom="40dp"
+                android:paddingTop="0dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                <Button
+                    android:id="@+id/clearHighScores"
+                    android:onClick="clearHighScores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text"
+                    android:text="clear \nscores"
+                    android:background="@color/boxback"
+                    android:textSize="10sp"
+                    android:layout_marginRight="10dp"
+                    />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textColor="@color/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Select a continent:"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="60dp"
+                        android:textColor="@color/text"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="current \nhighscores"
+                        android:textSize="10sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:background="@color/boxback">
+                        <TextView
+                            android:id="@+id/Africa"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawSelectorOnTop="true"
+                            android:gravity="center"
+                            android:onClick="openAfricaPage"
+                            android:padding="15dp"
+                            android:text="Africa"
+                            android:textColor="@color/text"
+                            android:textStyle="bold"/>
+                    </FrameLayout>
+                    <TextView
+                        android:id="@+id/mainScoreAfrica"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="0"
+                        android:textColor="@color/text"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:background="@color/boxback"
+                        android:gravity="center"
+                        android:onClick="openAmericaPage"
+                        android:padding="15dp"
+                        android:text="America"
+                        android:textColor="@color/text"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/mainScoreAme"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textColor="@color/text"
+                        android:text="0"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:background="@color/boxback"
+                        android:gravity="center"
+                        android:onClick="openEuropePage"
+                        android:padding="15dp"
+                        android:text="Europe"
+                        android:textColor="@color/text"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/mainScoreEu"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textColor="@color/text"
+                        android:text="0"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

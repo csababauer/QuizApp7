@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the capital of Guatemala?" />
+            <RadioGroup
+                android:id="@+id/firstQGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/firstQTrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:paddingRight="10dp"
+                    android:text="Guatemala City"
+                    android:textColor="#18ddff" />
+                <RadioButton
+                    android:id="@+id/b12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:text="Chiquita"
+                    android:textColor="#18ddff" />
+                <RadioButton
+                    android:id="@+id/b13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:text="Belize"
+                    android:textColor="#18ddff" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#6534ff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the capital of Bolivia?" />
+            <RadioGroup
+                android:id="@+id/secondQGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/b21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:text="Santa Cruz"
+                    android:textColor="#18ddff" />
+                <RadioButton
+                    android:id="@+id/secondQTrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:paddingRight="10dp"
+                    android:text="Sucre"
+                    android:textColor="#18ddff" />
+                <RadioButton
+                    android:id="@+id/b23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:text="Bolivar"
+                    android:textColor="#18ddff" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#6534ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the capital of Venezuela?" />
+            <RadioGroup
+                android:id="@+id/thirdQGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/b31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:text="Curacao"
+                    android:textColor="#18ddff" />
+                <RadioButton
+                    android:id="@+id/thirdQTrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:paddingRight="10dp"
+                    android:text="Caracas"
+                    android:textColor="#18ddff" />
+                <RadioButton
+                    android:id="@+id/b33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:text="Medellin"
+                    android:textColor="#18ddff" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#6534ff" />
+
+            <TextView
+                android:id="@+id/scoreAmerica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0/3" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:onClick="submitScore"
+                android:text="submit" />
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:onClick="backToMain"
+                android:text="back" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

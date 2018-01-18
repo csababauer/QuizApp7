@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="10dp"
+
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which of the following countries neighbour Egypt ?"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <CheckBox
+                android:id="@+id/algeria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/buttonTint"
+                android:paddingRight="10dp"
+                android:text="Algeria"
+                android:textColor="#18ddff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <CheckBox
+                android:id="@+id/libya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/buttonTint"
+                android:paddingRight="10dp"
+                android:text="Libya"
+                android:textColor="#18ddff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <CheckBox
+                android:id="@+id/sudan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/buttonTint"
+                android:paddingRight="10dp"
+                android:text="Sudan"
+                android:textColor="#18ddff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <CheckBox
+                android:id="@+id/morocco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/buttonTint"
+                android:text="Morocco"
+                android:textColor="#18ddff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <View
+                android:layout_width="348dp"
+                android:layout_height="1dp"
+                android:background="#6534ff"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which country is landlocked?"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <CheckBox
+                android:id="@+id/namibia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/buttonTint"
+                android:paddingRight="10dp"
+                android:text="Namibia"
+                android:textColor="#18ddff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <CheckBox
+                android:id="@+id/ethiopia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/buttonTint"
+                android:paddingRight="10dp"
+                android:text="Ethiopia"
+                android:textColor="#18ddff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <CheckBox
+                android:id="@+id/kenya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/buttonTint"
+                android:text="Kenya"
+                android:textColor="#18ddff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <View
+                android:layout_width="348dp"
+                android:layout_height="1dp"
+                android:background="#6534ff"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which country has red in its flag?"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/southsudan"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:paddingRight="10dp"
+                    android:text="South Sudan"
+                    android:textColor="#18ddff" />
+                <ImageView
+                    android:id="@+id/ssFlag"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ss"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/tanzania"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:text="Tanzania"
+                    android:textColor="#18ddff" />
+                <ImageView
+                    android:id="@+id/tzFlag"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tz"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/tunisia"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/buttonTint"
+                    android:paddingRight="10dp"
+                    android:text="Tunisia"
+                    android:textColor="#18ddff" />
+                <ImageView
+                    android:id="@+id/tnFlag"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tn"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="348dp"
+                android:layout_height="1dp"
+                android:background="#6534ff"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:textColor="@color/text"
+                android:id="@+id/scoreAfrica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="0/3"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <Button
+                android:id="@+id/submitAfrica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:onClick="submitScoreAfrica"
+                android:text="submit"
+                android:textColor="@color/text"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <Button
+                android:id="@+id/back"
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:onClick="backToMain"
+                android:text="back" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
